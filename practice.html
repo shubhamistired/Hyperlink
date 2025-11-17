@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Form</title>
+
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-  <h2 style="text-align: center;"> Form</h2>
+  <h2 class="title">Student Form</h2>
 
-  <form style="width: 300px; margin: auto; padding: 15px;">
+  
+  <form class="myForm">
     <fieldset>
       <legend>Personal Info</legend>
 
-      First Name:<br>
-      <input type="text" name="first_name" placeholder="First name"><br><br>
+      <label>First Name:</label>
+      <input type="text" name="first_name" placeholder="First name">
 
-      Last Name:<br>
-      <input type="text" name="last_name" placeholder="Last name"><br><br>
+      <br><br>
 
-      Email:<br>
-      <input type="email" name="email" placeholder="Email"><br><br>
+      <label>Last Name:</label>
+      <input type="text" name="last_name" placeholder="Last name">
+      
+      <br><br>
 
-      Password:<br>
-      <input type="password" name="password" placeholder="Password"><br><br>
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="Email">
 
-      Gender:<br>
+      <br><br>
+
+      <label>Password:</label>
+      <input type="password" name="password" placeholder="Password">
+
+      <br><br>
+
+      <label>Gender:</label><br>
       <input type="radio" name="gender" value="male"> Male
-      <input type="radio" name="gender" value="female"> Female<br><br>
+      <input type="radio" name="gender" value="female"> Female
 
-      Date of Birth:<br>
-      <input type="date" name="dob"><br><br>
+      <br><br>
 
-      Language:<br>
+      <label>Date of Birth:</label>
+      <input type="date" name="dob">
+
+      <br><br>
+
+      <label>Language:</label>
       <select name="language">
         <option>English</option>
         <option>Hindi</option>
-      </select><br><br>
+      </select>
 
-      Upload File:<br>
-      <input type="file" name="file"><br><br>
-
-      Address:<br>
-      <textarea name="address" rows="3" cols="30"></textarea><br><br>
-      
-        Duration of degree:<br>
-        <input type="range" id="degree" name="degree" min="1" max="8" value="4" />
       <br><br>
+
+      <label>Upload File:</label>
+      <input type="file" name="file">
+
+      <br><br>
+
+      <label>Address:</label>
+      <textarea name="address" rows="3"></textarea>
+
+      <br><br>
+
+      <label>Duration of degree:</label>
+      <input type="range" name="degree" min="1" max="8" value="4">
+
+      <br><br>
+
       <input type="submit" value="Submit">
       <input type="reset" value="Reset">
 
